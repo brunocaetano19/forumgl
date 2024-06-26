@@ -1,0 +1,41 @@
+Version 2.0.1 [10/12/2019]
+! Updated FontAwesome to 5.11.2
+! Fixed a couple of minor bugs
+
+Version 2.0 [04/16/2019]
++ Added options to disable some of the graphics
++ Added option to force one of the layouts on members
++ Added options to manipulate the avatars on topics and boards
+- Removed google+ from social media links
+! Some code cleanup
+! Updated the FontAwesome library
++ Added option to switch between two logos
+
+28/01/2019
+! Fixed auto suggest list not visible
+
+09/11/2018
+! Big CSS Code Cleanup
++ Added Instant tooltip change of light/dark modes switcher
+
+27/10/2018
++ Added Russian Translation by Whyskas
+
+04/10/2018
++ Added Polish Translation by UltimatePremium
++ Added Credits for Translators in the theme settings page.
+
+27/09/2018
+! Fixed old text strings appearing instead of theme specified ones.
+
+26/09/2018 #1
+! Added explanatory text for brand icon types.
+! Added support for brand icon types.
+
+26/09/2018
++ Added Spanish Translation by Rock Lee
+! Fixed Browser compatibility issues with topic option dropmenu (Opera & IE)
+
+24/09/2018
+! Fixed header buttons not showing with banner images, credit goes to Antechinus.
+! Fixed broken guest default avatar.

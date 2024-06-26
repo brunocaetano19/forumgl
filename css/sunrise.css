@@ -1,0 +1,360 @@
+/**
+ * @package SunRise SMF Theme
+ * @author SychO (M.S) https://sycho9.github.io
+ * @version 2.0
+ *
+ * @license Copyright (C) 2020 SychO (M.S)
+ * This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+ * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+ * You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
+ * LICENSE.TXT
+ *
+ * version 2.0
+*/
+
+/* General Styles.
+---------------------- */
+body {
+	background: #ededed;
+}
+a {
+	color: #702000;
+} 
+a:hover {
+	color: #FF6120;
+}
+#upper_section {
+	background: #d5d5d5;
+}
+#top_section {
+	background: #ffffff;
+	box-shadow: 0 0px 2px rgba(0, 0, 0, 0.33);
+	position: relative;
+	z-index: 1;
+}
+/* Header Graphics */
+.mountain {
+	background-image: url("../images/custom/sr_sunrise.png");
+	background-repeat: no-repeat;
+}
+.mosunmo .sr_star {
+	background: #d7cbc2;
+}
+/* Footer Graphics */
+footer {
+	background: #d1c3da url(../images/custom/footer.jpg) no-repeat;
+	background-size: 100%;
+	background-position: left 0;
+}
+
+/* Backgrounds, No Alternating colors */
+.windowbg, #preview_body, .windowbg2, .windowbg3 {
+	background: white;
+} 
+.windowbg:not(td):not(tr):not(li), #preview_body:not(td):not(tr):not(li), .windowbg2:not(td):not(tr):not(li), .windowbg3:not(td):not(tr):not(li), .approvebg:not(td):not(tr):not(li), .approvebg2:not(td):not(tr):not(li) {
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+}
+/* Block Headers */
+h3.catbg, h3.catbg2, h3.titlebg, h4.titlebg, h4.catbg, h3.catbg a:link, h3.catbg a:visited, h4.catbg a:link, h4.catbg a:visited, h3.catbg, .table_list tbody.header td, .table_list tbody.header td a {
+	color: #555555;
+	background: transparent;
+}
+h3.catbg a:hover, h4.catbg a:hover, .table_list tbody.header td a:hover {
+	color: black;
+}
+
+.roundframe {
+	background: #fff;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+}
+.roundframe.bi {
+	box-shadow: none;
+	padding: 0;
+}
+
+/* DropMenu */
+.dropmenu li a {
+	color: #555;
+}
+.dropmenu li ul {
+	background: white;
+}
+.dropmenu li li a {}.dropmenu li li a:hover, .dropmenu li li:hover>a {
+	color: #fff;
+	background: #ff6120;
+}
+#content_section .dropmenu li a.firstlevel {
+	background: #fff;
+	padding: 11px 15px;
+}
+.dropmenu li:hover a.firstlevel {
+	color: #FF6120;
+}
+#content_section .dropmenu li:hover a.firstlevel {
+	background: #FF6120;
+	color: #fff;
+}
+.dropmenu li a.active {
+	color: #FF8553;
+}
+#content_section .dropmenu li a.active {
+	background: #FF6120;
+	color: #fff;
+}
+
+/* Buttons */
+.buttonlist ul li a, .buttonLike, a.buttonLike, a.buttonLike:link, a.buttonLike:visited, table.table_list a.collapse:link, table.table_list a.collapse:visited {
+	color: #626262;
+	background: white;
+} 
+.buttonlist ul li a:hover, ul.quickbuttons li a:hover, .buttonLike.icon_style:hover, .buttonLike:hover, a.buttonLike:hover, a.buttonLike:link:hover, a.buttonLike:visited:hover, table.table_list a.collapse:link:hover, table.table_list a.collapse:visited:hover {
+	color: #ffffff;
+	background: #FF6120;
+}
+.buttonlist.specialBL li a {
+	background: transparent;
+}
+
+/* Table Styles */
+.table_list tbody.content td.info a.subject {
+	color: #FF6120;
+}
+table th, tr.catbg th {
+	color: black;
+	background: #ffffff;
+	border-bottom: 2px solid #dbdbdb;
+}
+tr.catbg th a:link, tr.catbg th a:visited, tr.catbg2 td a:link, tr.catbg2 td a:visited {
+	text-decoration: none;
+}
+table td, table tr td, table tbody tr td, table.table_grid td, table td.windowbg2, table td.windowbg {
+	background: white;
+	color: black;
+}
+table tr.catbg td {
+	background: transparent;
+	text-transform: uppercase;
+}
+td.info .child_boards a {
+	background: #ff6120;
+	color: white;
+}
+td.info .child_boards a:hover {
+	background: #ededed;
+	color: black;
+}
+
+/* Highlighted text - such as search results. */
+.highlight, .highlight td, table.table_grid .highlight td
+{
+	color: #FF86A2 !important;
+}
+
+/* A more discreet highlight color, for selected membergroups etc. */
+.highlight2, .highlight2 td, table.table_grid .highlight2 td
+{
+	background: #f5bea7;
+}
+/* Colors for background of posts requiring approval */
+.approvebg, .approvebg2, .approvebg, table .approvebg td, table.table_grid .approvebg td, .approvebg2, table .approvebg2 td, table.table_grid .approvebg2 td
+{
+	color: #000;
+	background-color: #FFF1EC;
+}
+
+/* Color for background of *topics* requiring approval */
+.approvetbg, table .approvetbg td, table.table_grid .approvetbg td, .approvetbg2, table .approvetbg2 td, table.table_grid .approvetbg2 td
+{
+	color: #000;
+	background-color: #e4a17c;
+}
+
+/* Sticky topics get a different background */
+.stickybg, table .stickybg td, table.table_grid .stickybg td, .stickybg2, table .stickybg2 td, table.table_grid .stickybg2 td
+{
+	background-color: #fef8e1;
+}
+
+/* Locked posts get a different shade, too! */
+.lockedbg, table .lockedbg td, table.table_grid .lockedbg td, .lockedbg2, table .lockedbg2 td, table.table_grid .lockedbg2 td
+{
+	background-color: #ECFFFB;
+	font-style: italic;
+}
+
+/* Few Other Elements */
+.news_marquee {
+	background: #fff;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+}
+.news_marquee > i {
+	border-right: 1px solid #ededed;
+}
+.inner {
+	border-top: 2px solid #ededed;
+}
+.description, .description_board, .plainbox {
+	background:white;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+}
+.boardindex_block .quan,
+.boardindex_block #userstoday {
+	background: #fff;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+}
+.ident {
+	background: #ff6120;
+	color: #fff;
+} 
+.threadthis {
+	background: #FFCDB9;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+}
+hr, .hrcolor
+{
+	color: #ccc;
+	background-color: #d7d7d7;
+}
+.quan hr, .windowbg hr, .window2bg hr {
+	background: #ededed;
+} 
+.poster div.avatar>a {
+	background: #fff;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+}
+.statsbar div.bar {
+	background: #ff8453;
+}
+.signature, .custom_fields_above_signature {
+	border-top: 2px #ededed solid;
+}
+
+.signature {
+	color: #6e6e6e;
+}
+.information {
+	background: #FF86A2;
+	color: black;
+	border: none;
+}
+/* Page Index */
+.navPages.active {
+	background: #FF6120;
+	color: white;
+}
+.navPages {
+	background: #fff;
+}
+td .navPages {
+	background: #f2f2f2;
+}
+.navPages:hover {
+	background: #FF6120;
+	color: white;
+}
+
+/* Common Stats */
+div#index_common_stats .layr .blck i {
+	background: #ffffff;
+}
+
+div#index_common_stats .layr:hover .blck i {
+	background: #ff8453;
+	color: #fff;
+}
+
+/* Pretty Boxes */
+div#profile_error, .errorbox
+{
+	border-color: #FF202B;
+	color: #3d3d3d;
+	background: #FF868C;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+}
+div#profile_success
+{
+	color: black;
+	background: #20FFAB;
+	border-color: #00EC93;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+}
+
+.list_posts {
+	border-top: 2px solid #ededed;
+}
+
+
+/* Auto Suggest */
+.auto_suggest_div {background: white;}
+.auto_suggest_item,.auto_suggest_item_hover {background-color: #ffffff;color: #000000;}
+.auto_suggest_item_hover {background-color: #ff6120;color: #ffffff;}
+
+fieldset {
+	border: 2px solid #ededed;
+}
+
+/* Forum Title */
+div.forumtitle .title_onclick {
+	color: #555;
+}
+div.forumtitle .title_onclick:hover .side_icon {
+	background: rgb(255, 132, 83);
+}
+div.forumtitle .title_onclick:hover .side_icon i {
+	color: #fff;
+}
+div.forumtitle .title_onclick .side_icon i {
+	color: #555;
+}
+div.forumtitle .side_icon {
+	background: #fff;
+}
+
+
+.left_admmenu li strong a {
+	background: #ff6120;
+	color: #fff;
+}
+.bbc_table td {
+	background: #f6f5f5;
+}
+code.bbc_code {
+	background: #ededed;
+}
+.left_admmenu {
+	background:#fff
+}
+.activity_stats li div.bar div {
+	background: #ff6120;
+}
+/* vbgamer45's Like Posts Support.
+---------------------------------- */
+.like_posts_member_info_box {
+	background: white!important;
+}
+.like_posts_member_info {
+	border-top: none !important;
+	border-bottom: 2px solid white!important;
+}
+.subject_details {
+	background-color: #fff !important;
+	color: #000 !important;
+	display: none;
+	position: absolute;
+	padding: 10px;
+	border: 0px !important;
+	border-radius: 1px!important;
+	width: auto!important;
+}
+.like_post_message_data,
+.like_post_topic_data,
+.like_post_board_data,
+.like_post_most_liked_user_data,
+.like_post_most_likes_given_user_data,
+.like_post_stats_error {
+	background: #fff !important;
+	color: #000 !important;
+}
+.like_link {
+	background: #ff6120 !important;
+}

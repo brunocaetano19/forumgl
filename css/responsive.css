@@ -1,0 +1,637 @@
+/**
+ * @package SunRise SMF Theme
+ * @author SychO (M.S) https://sycho9.github.io
+ * @version 2.0
+ *
+ * @license Copyright (C) 2020 SychO (M.S)
+ * This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+ * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+ * You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
+ * LICENSE.TXT
+ *
+ * version 2.0
+*/
+/* Tablet-->Mobile.
+-------------------- */
+@media (max-width: 768px) {
+	/* Classes To Be Remembered.
+	---------------------------- */
+	.taphoNone {display: none}
+	.taphoOnly {display: block}
+	.taphoOnlyInline {display: inline-block}
+	.taphoNone.buttonLike {display: none}
+	.taphoOnly.buttonLike {display: block}
+	.taphoOnlyInline.buttonLike {display: inline-block}
+	.sampleClass{float:none;display:none;}
+	/* Full Width */
+	.boardindex_block, nav .dropmenu li ul, #admin_content #quick_tasks li, #admin_content #live_news, #admin_content #supportVersionsTable, 
+	#admin_content .modblock_left, #admin_content .modblock_right, #mlist_search, #mlist_search input:not([type="checkbox"]),
+	#searchform, #searchform input:not([type="checkbox"]), #advanced_search dl#search_options, #searchBoardsExpand, #searchBoardsExpand ul {
+		display: block;
+		position: relative;
+		width: 100%;
+		box-sizing: border-box;
+		transform: none;
+		top: 0;
+		left: 0;
+		margin: 0 0;
+		float: none;
+	}
+	/* Remove */
+	table.table_list tbody.content td.stats {
+		display: none;
+	}
+	/* Little Menues */
+	.phoneVflow {
+    	overflow: visible;
+	}
+	.phoneListpapa {
+		overflow: visible;
+		background: transparent;
+		z-index: 1;
+	}
+	.phoneList, ul.phoneList, ul.quickbuttons.phoneList {
+		position: absolute;
+		padding: 0;
+		top: 36px;
+		right: 1px;
+		border-radius: 3px;
+		overflow: hidden;
+		height: 0;
+		transition: all .25s ease;
+	}
+	.phoneListpapa:hover .phoneList {
+		height: auto;
+	}
+	.phoneList li:not(.inline_mod_check), ul.phoneList li:not(.inline_mod_check), ul.quickbuttons.phoneList li:not(.inline_mod_check) {
+		float: none;
+		display: block;
+		margin: 0;
+	}
+	.phoneList li a, ul.phoneList li a, ul.quickbuttons.phoneList li a {
+		background: #ffffff;
+		float: none;
+		text-align: left;
+		white-space: nowrap;
+		border-radius: 0;
+		padding: 3px 5px;
+		width: unset;
+		text-transform: uppercase;
+	}
+	.postarea ul.quickbuttons li a span {
+		display: inline;
+		margin-left: 5px;
+		font-size: 11px;
+	}
+	.phoneList li a:before, ul.phoneList li a:before, ul.quickbuttons.phoneList li a:before, ul.quickbuttons li a i {
+		font-size: 12px;
+		line-height: 22px;
+	}
+	ul.quickbuttons.phoneList li.inline_mod_check {
+		display: none;
+	} form[name="pmFolder"] .post {
+		margin-top: 1em;
+	}
+	/* Header.
+	----------------- */
+	header {z-index: 2; position:relative}
+	header nav {
+		position: fixed;
+		width: 55%;
+		box-sizing: border-box;
+		float: none;
+		right: -100%;
+		background: #d5d5d5;
+		z-index: 99;
+		height: 100%;
+		overflow-y: auto;
+		padding-bottom: 2em;
+		top: 0;
+	}
+	header nav .dropmenu>li {
+		float: none;
+		border-radius: 4px;
+	}
+	header nav .dropmenu>li>a.firstlevel>i {
+		padding: 0 0;
+		width: 31px;
+		text-align: center;
+		line-height: 37px;
+		vertical-align: bottom;
+		margin-right: 4px;
+		margin-left: -4px;
+	}
+	header nav .dropmenu>li a.firstlevel {
+		line-height: 37px;
+		border-left: 4px solid rgb(85, 85, 85) !important;
+		margin: 2px 0;
+		padding: 8px 10px;
+		border-radius: 0;
+		background: transparent;
+		text-align: left;
+	}
+	header nav .dropmenu>li a.firstlevel .buttonLike {}
+	header nav .dropmenu>li a.firstlevel .buttonLike i {}
+	header nav .dropmenu>li:hover a.firstlevel, header nav .dropmenu>li a.firstlevel:active {
+		border-left-color: #ff6120 !important;
+	}
+	nav .dropmenu li a.firstlevel i, .dropmenu li a.firstlevel span.firstlevel {
+		display: inline-block;
+	} nav .dropmenu li ul {
+		overflow: hidden;
+		transition: all 0.8s;
+		margin: -4px 0px 4px !important;
+		padding: 0;
+	} nav .dropmenu li ul li a {
+		z-index: 0 !important;
+		margin: 0 4px;
+		border-radius: 0;
+	} nav .dropmenu li ul.openEd {
+		padding: 0px 0 2em;
+	} header nav .dropmenu li a.active {
+		border-left: 5px solid #ff8553 !important;
+	}.dropmenu li ul {
+		transition: all 0.8s;
+	} .dropmenu li:hover>ul {
+		animation: none;
+		height: auto;
+	} .topSettings {
+		text-align: center;
+	}
+	.topSettings .buttonLike {
+		float: none;
+	}
+	.user .dropmenu li>ul {
+		overflow: hidden;
+		padding: 0;
+	}
+	div.forumtitle .title_onclick.imgHeader img {
+		max-width: 100%;
+	}
+	table.table_list tbody.content td.icon {
+		width: 2%;
+	}
+	table.table_list tbody.content td.icon img {
+		width: 35px;
+	} #main_content_section{ overflow-x:visible; }
+	#forumposts h3 span#author {
+		display: none;
+	}
+	#forumposts .cat_bar:first-of-type {
+		overflow: visible;
+		height: auto;
+	}
+	#forumposts .cat_bar:first-of-type h3 {
+		overflow: visible;
+		height: auto;
+		line-height: 23px;
+		padding: 6px 10px;
+	} #forumposts h3 img {
+		margin: 1px 0.5em 0 0;
+	} form#postmodify .roundframe {
+		padding: 8px 10px;
+	} #edit_poll fieldset input {
+		display: block;
+		box-sizing: border-box;
+		width: 100%;
+		margin: 0 !important;
+	}
+	#edit_poll ul.poll_main li {
+		padding: 0;
+	}
+	#edit_poll ul.poll_main {
+		padding: 0;
+	}
+	#content_section, .wrapper {
+		width: 90% !important
+	} #admin_menu li a.firstlevel:hover{
+		background: black !important;
+	} #admin_menu li a.firstlevel {
+		margin: 2px 0;
+	}
+	#admin_menu .dropmenu>li {
+		position: unset;
+	} #admin_menu .dropmenu {position:relative;}
+	#admin_menu .dropmenu:after{
+		content:"";
+		display:block;
+		clear:both;
+	}
+	#admin_menu .dropmenu li:hover>ul {top: 100%;width:100%;}
+	#admin_menu .dropmenu li li ul {
+		left:0;margin:0;
+		position: relative;
+		display:block;
+		top:0;
+		width:100%;
+		background: #e1e1e1;
+		box-shadow:none;
+	} #admin_menu .dropmenu li li li a {padding-left: 1.2em !important;} #admin_menu .dropmenu li li ul:after{
+		content: "";
+		display: block;
+		position: absolute;
+		top: -16px;
+		left: 20px;
+		border-bottom: 8px solid #e1e1e1;
+		border-right: 8px solid transparent;
+		border-left: 8px solid transparent;
+		border-top: 8px solid transparent;
+	}
+	#admin_menu .dropmenu>li>ul {
+		left: 0;
+		border-top: 4px solid black;
+		border-bottom: 4px solid black;
+	} #mlist_search input:not([type="checkbox"]), #searchform input:not([type="checkbox"]) {
+		margin: 2px 0;
+	} #advanced_search dt {
+		text-align: left;
+	}
+	
+	.fullscreen .fsInner {
+		width: 98%;
+		box-sizing: border-box;
+	} 
+}
+
+/* 720px
+------------ */
+@media (max-width: 720px) {
+	#content_section, .wrapper {
+		width: 99% !important;
+	}
+	#moderation_log_list .position, #moderation_log_list .ip {
+		display: none;
+	}
+	#watch_user_list .posts:not(.unique), #watch_user_list .last_login {
+		display: none;
+	}
+	#group_lists .stars {
+		display: none;
+	}
+	#warning_list .time {
+		display: none;
+	}
+}
+
+/* Mobile Only.
+------------------ */
+@media only screen and (max-width: 480px) {
+	/* Display None */
+	.poster li.postcount,.poster li.karma,.poster li.gender, .poster li.karma_allow, .poster li.stars, .poster li.blurb, .side_icon, 
+	table.table_list tbody.content td.lastpost, .phoneNone, phoneNone.buttonLike, .navigate_section ul li:not(.last) div.cust, .signature, li.title, 
+	.user .dropmenu li a.firstlevel span:not(.spshl):not(.toolong), .topic_table td.stats, .topic_table td.lastpost, ul.quickbuttons li.inline_mod_check,
+	#notification_list form:first-of-type th:nth-child(2), #notification_list form:first-of-type th:nth-child(3), 
+	#notification_list form:first-of-type td:nth-child(2), #notification_list form:first-of-type td:nth-child(3), .buttonlist ul li a.button_strip_markselectread {
+		display: none;
+	}
+	.phoneOnly {display: block;} .phoneOnlyInline {display: inline-block;}
+	/* Full Width */
+	#left_admsection, #main_admsection, .righter, .lefter, .middler, .poster, .postarea, .post_wrapper .keyinfo, header nav .dropmenu>li>ul, .buttonlist,
+	div#upper_section div.user, div#upper_section div.news, div#detailedinfo, div#basicinfo, #upper_section div.forumtitle,
+	.login, #month_grid, #stats_left, #top_posters, #top_topics_replies, #top_topics_starter, #stats_right, #top_boards, #top_topics_views, #most_online, 
+	#fatal_error {
+		display: block;
+		position: relative;
+		width: 100%;
+		box-sizing: border-box;
+		transform: none;
+		top: 0;
+		left: 0;
+		margin: 0 0;
+		float: none;
+	}
+	div#basicinfo {
+		text-align: center;
+	}
+
+	#basicinfo ul li {
+		float: none;
+	}
+	/* Clear */
+	#admin_menu, .phoneClear {clear:both;}
+	/* Force Full Width */
+	dl:not(.phoneDL):not(.stats) dt, dl:not(.phoneDL):not(.stats) dd, #main_grid {
+		display: block !important;
+		position: relative !important;
+		width: 100% !important;
+		box-sizing: border-box !important;
+		transform: none !important;
+		top: 0 !important;
+		left: 0 !important;
+		margin: 0 0 !important;
+		float: none !important;
+		text-align: left;
+	}
+	.login dd input {
+		display: block;
+		width: 100%;
+		box-sizing: border-box;
+	}
+	/* Full Width Tables */
+	#month_grid table {
+		display: table;
+		position: relative;
+		width: 100%;
+		box-sizing: border-box;
+		transform: none;
+		top: 0;
+		left: 0;
+		margin: 0 0;
+		float: none;
+	}
+	/* Icons Only */
+	.buttonlist ul li a span {
+		display: none;
+	} .buttonlist ul li a:before {
+		margin: 0 !important;
+		line-height: 40px;
+		font-size: 19px;
+	} .buttonlist ul li a {
+		padding: 0;
+		width: 40px;
+		text-align: center;
+	} .buttonlist {
+		margin: 0;
+		text-align: center;
+	} .buttonlist ul {
+		margin: 0;
+		padding: 6px 0;
+		float: right;
+	} .buttonlist ul li {
+		float: none;
+		display: inline-block;
+	}
+	.sampleClass {float:none;display:none;}
+	/* Clear View */
+	.poster:after {
+		content: "";
+		display:block;
+		clear: both;
+	}
+	/* Spacing Elements */
+	dl:not(.phoneDL):not(.stats) dt {margin: 10px 0 5px;}
+	dd input {
+		max-width: 100%;
+	} /* The Ez Way */
+	dl:not(.phoneDL):not(.stats) dt {margin: 10px 0 5px !important;} /* The Hard Way */
+	dl.stats dd, dl.stats dt {overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+	/* Header.
+	-------------- */
+	header nav {width: 100%;}
+	#upper_section {
+	}
+	#top_section {
+		padding: 8px 0;
+	} div.forumtitle .side_icon {
+		display: block !important;
+		margin: 0 auto;
+	} div.forumtitle div {
+		line-height: 40px;
+	}
+	div.forumtitle {
+		padding: 0 0 0 8px;
+	} div#upper_section div.news {
+		font-size: 11px;
+		text-align: center;
+		display: none;
+	} #upper_section {
+		height: auto;
+		padding: 0;
+	} #upper_section div.forumtitle {
+		max-width: unset;
+		padding: 20px 0 25px;
+		text-align: center;
+	} .user .dropmenu li a.firstlevel>i {
+		padding: 0;
+		line-height: 52px;
+		width: 30px;
+	}
+	/* Main.
+	-------------- */
+	#content_section, .wrapper {position: relative;z-index: 1;width: 98%!important;}
+	#upper_section .wrapper {
+		width: 100% !important;
+	}
+	#content_section>div.frame {
+    padding: 8px 2px;
+	}
+	table.table_list td.info p.bdcrp {
+		font-size: 11px;
+	}
+	.post {
+		clear: both;
+	}
+	.poster {
+		text-align: left;
+		padding-bottom: 4px;
+	}
+	.poster div.avatar {
+		float: left;
+		margin: 0 8px 8px;
+	}
+	.poster div.avatar img.avatar {
+		width: 70px;
+		max-width: unset;
+	}
+	.poster li.profile {
+		position: absolute;
+		right: 5px;
+		top: -12px;
+		writing-mode: vertical-rl;
+		-webkit-writing-mode: vertical-rl;
+		-moz-writing-mode: vertical-rl;
+		-ms-writing-mode: vertical-rl;
+		-o-writing-mode: vertical-rl;
+		height: 70px;
+	} .poster li.profile a {
+		margin: 0 1px;
+	} .poster li.profile a img {
+		vertical-align: text-top;
+		padding: 6px;
+	}
+	ul.reset li.membergroup, ul.reset li.postgroup, .poster li.warning, #basicinfo h4 span.position {
+		padding: 3px 0;
+		line-height: 13px;
+	} .poster h4 {
+		font-size: 15px;
+		margin: 12px 0 1px;
+	}
+	.poster h4 img[alt="Online"], .poster h4 img[alt="Offline"] {
+		width: 12px;
+		margin-top: 3px;
+		vertical-align: top;
+	} .post_wrapper ul.quickbuttons {
+		background: transparent;
+		position: absolute;
+		box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+	} .postarea div.flow_hidden {
+		padding: 0;
+	} .postarea {
+		padding: 8px 10px 0;
+	} .post_wrapper .keyinfo {
+    	width: auto;
+	} .poster ul.greezeInsider {
+		background: transparent;
+		margin: 0;
+		padding: 0;
+	} .post_wrapper .post {
+		margin-top: 1em;
+	}
+	div#index_common_stats .layr {
+		width: 33%!important;
+		text-align: center;
+	}
+	div#index_common_stats .layr .blck i {
+		float: none;
+		margin: 0 auto 7px;
+	} 
+	form.modcenter_reported_posts .content div .floatleft, form.modcenter_reported_posts .content div .floatright {
+		float: none;
+	} .main_section:not(#whos_online) #mlist tr td:first-child {
+		width: 1%;
+		padding: 0 0px 0 8px;
+		text-align: center;
+	}
+	#mlist th.first_th a {
+		display: none;
+	}
+	#moderation_log_list .time {
+		display: none;
+	}
+	#warning_list .reason {
+		display: none;
+	}
+	/* Footer.
+	-------------- */
+	.righter, .lefter, .middler {
+		margin: 7px 0;
+		text-align: center;
+		margin: 7px 0;
+	}
+	footer .frame.for_abt {
+		font-size: 10px;
+	}
+	footer div.frame {
+		padding: 10em 0 2em 0em;
+	}
+}
+
+/* 320 Smallest Possible */
+@media only screen and (max-width: 320px) {
+	header .frame:before {
+		background-size: auto 100%;
+	}
+}
+/* TABLET.
+-------------------------- */
+@media only screen and (max-width: 768px) and (min-width: 480px) {
+	/* Full Width */
+	#upper_section div.forumtitle {
+		display: block;
+		position: relative;
+		width: 100%;
+		box-sizing: border-box;
+		transform: none;
+		top: 0;
+		left: 0;
+		margin: 0 0;
+		float: none;
+	}
+	/* Remove */
+	/* Header.
+	--------------- */
+	#upper_section div.news {
+		right: 0;
+	} #upper_section {
+		height: auto;
+		padding: 0;
+	} #upper_section div.forumtitle {
+		max-width: unset;
+		padding: 1em 0 25px;
+	}
+
+	/* Main.
+	------------- */
+	table.table_list tbody.content td.lastpost {
+		width: 33%;
+	}
+	/* Footer.
+	------------ */
+	footer div.frame {
+		padding: 14em 0 2em 0em;
+	}
+}
+/* Special Queries.
+--------------------- */
+@media (max-width: 855px) {
+	#basicinfo img.avatar {
+		max-width: 110px;
+		height: auto;
+		min-width: unset;
+		width: auto;
+		margin: 0 auto;
+	}
+} 
+@media (max-width: 900px) {
+	#moderationbuttons {
+		clear: both;
+	}
+}
+@media (max-width: 565px) {
+	table.table_list tbody.content td.lastpost {
+		display:none;
+	}
+}
+@media (max-width: 500px) {
+	footer .for_abt div.ryo, footer .for_abt.single div.ryo {
+		width: 100%;
+		float: none;
+	}
+}
+@media (max-width: 620px) {
+	.righter, .lefter, .middler {
+		display: block;
+		position: relative;
+		width: 100%;
+		box-sizing: border-box;
+		transform: none;
+		top: 0;
+		left: 0;
+		margin: 0 0;
+		float: none;
+		text-align: center;
+		margin: 7px 0;
+	}
+}
+@media (max-width: 1024px) and (min-width: 426px) {
+	#upper_section .wrapper {
+	} div.forumtitle div {
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		max-width: 80%;
+	}
+}
+@media (max-width: 860px) {
+    .eightSixtyRemove {
+        display:none;
+    }
+}
+@media only screen and (min-width: 1900px) {
+	#content_section, .wrapper {
+		width: 65% !important;
+	}
+}
+/* SimplePortal Support.
+------------------------ */
+@media (max-width: 767px) {
+	table#sp_main, table#sp_main>tbody>tr, table#sp_main>tbody>tr>td, table#sp_main>tbody {
+		display: block;
+		width: 100%;
+		background: transparent;
+		table-layout: unset;
+	}
+	table#sp_main {
+		background: transparent;
+	}
+}

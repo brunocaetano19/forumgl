@@ -1,0 +1,510 @@
+/**
+ * @package SunRise SMF Theme
+ * @author SychO (M.S) https://sycho9.github.io
+ * @version 2.0
+ *
+ * @license Copyright (C) 2020 SychO (M.S)
+ * This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+ * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+ * You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
+ * LICENSE.TXT
+ *
+ * version 2.0
+*/
+/* General Styles.
+---------------------- */
+body {
+	background: #15161a;
+}
+/* use dark grey for the text, leaving #000 for headers etc */
+body, td, th, tr
+{
+	color: #b2b2b2;
+}
+/* By default set the color on these tags as #000. */
+h1, h2, h3, h4, h5, h6
+{
+	color: #bebebe;
+	font-size: 1em;
+	margin: 0;
+	padding: 0;
+}
+a {
+	color: #5b8397;
+} a:hover {
+	color: #33a0d5;
+}
+.poster h4, .poster h4 a {
+	color: #cfcfcf;
+}
+#upper_section {
+	background: #0D0E10;
+}
+#top_section {
+	background: #1e2024;
+	box-shadow: 0 0px 2px rgba(0, 0, 0, 0.3);
+	position: relative;
+	z-index: 1;
+}
+/* Header Graphics */
+.mountain {
+	background-image: url("../images/custom/sr_midnight.png");
+	background-repeat: no-repeat;
+}
+.mosunmo .sr_star {
+	background: #121b2c;
+}
+/* Footer Graphics */
+footer {
+	background: #2f343a url(../images/custom/footer_midnight.jpg) no-repeat;
+	background-size: 100%;
+	background-position: left 0;
+}
+
+/* Backgrounds, No Alternating colors */
+.windowbg, #preview_body, .windowbg2, .windowbg3 {
+	background: #1b1e20;
+} 
+.windowbg:not(td):not(tr):not(li), #preview_body:not(td):not(tr):not(li), .windowbg2:not(td):not(tr):not(li), .windowbg3:not(td):not(tr):not(li), .approvebg:not(td):not(tr):not(li), .approvebg2:not(td):not(tr):not(li) {
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+}
+/* Block Headers */
+h3.catbg, h3.catbg2, h3.titlebg, h4.titlebg, h4.catbg, h3.catbg a:link, h3.catbg a:visited, h4.catbg a:link, h4.catbg a:visited, h3.catbg, .table_list tbody.header td, .table_list tbody.header td a, h3.titlebg a, h3.titlebg, h4.titlebg, h4.titlebg a {
+	color: #acacac;
+	background: transparent;
+}
+h3.catbg a:hover, h4.catbg a:hover, .table_list tbody.header td a:hover, h3.titlebg a:hover, h4.titlebg a:hover {
+	color: #0073AB;
+}
+.titlebg, .titlebg2, tr.titlebg th, tr.titlebg td, tr.titlebg2 td, fieldset legend, tr.titlebg th a:link, tr.titlebg th a:visited, tr.titlebg2 td a:link, tr.titlebg2 td a:visited {
+	color: #d5d5d5;
+}
+
+.roundframe {
+	background: #1B1E20;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+}
+.roundframe.bi {
+	box-shadow: none;
+	padding: 0;
+}
+
+/* DropMenu */
+.dropmenu li a {
+	color: #8d8d8d;
+}
+.dropmenu li ul {
+	background: #1B1E20;
+}
+.user .dropmenu li ul {
+	overflow: hidden;
+	padding: 0;
+}
+.dropmenu li li a {}.dropmenu li li a:hover, .dropmenu li li:hover>a {
+	color: #fff;
+	background: #0073AB;
+}
+#content_section .dropmenu li a.firstlevel {
+	background: #1B1E20;
+	padding: 11px 15px;
+}
+.dropmenu li:hover a.firstlevel {
+	color: #0073AB;
+}
+#content_section .dropmenu li:hover a.firstlevel {
+	background: #0073AB;
+	color: #fff;
+}
+.dropmenu li a.active {
+	color: #0073AB;
+}
+#content_section .dropmenu li a.active {
+	background: #0073AB;
+	color: #fff;
+}
+
+/* Buttons */
+.buttonlist ul li a, .buttonLike, a.buttonLike, a.buttonLike:link, a.buttonLike:visited, table.table_list a.collapse:link, table.table_list a.collapse:visited {
+	color: #d7d6d6;
+	background: #1B1E20;
+} 
+.buttonlist ul li a:hover, ul.quickbuttons li a:hover, .buttonLike.icon_style:hover, .buttonLike:hover, ul.quickbuttons.phoneList li a:hover, a.buttonLike:hover, a.buttonLike:link:hover, a.buttonLike:visited:hover, table.table_list a.collapse:link:hover, table.table_list a.collapse:visited:hover {
+	color: #ffffff;
+	background: #0073AB;
+}
+.buttonlist.specialBL li a {
+	background: transparent;
+} 
+
+/* Table Styles */
+.calendar_today {
+	background-color: #0e181e;
+}
+.table_list tbody.content td.info a.subject {
+	color: #0073AB;
+}
+table th, tr.catbg th {
+	background: #1B1E20;
+	border-bottom: 2px solid #15161a;
+}
+tr.catbg th a:link, tr.catbg th a:visited, tr.catbg2 td a:link, tr.catbg2 td a:visited
+{
+	text-decoration: none;
+}
+table td, table tr td, table tbody tr td, table.table_grid td, table td.windowbg2, table td.windowbg {
+	background: #1B1E20;
+	color: #acacac;
+}
+table tr.catbg td {
+	background: transparent;
+	text-transform: uppercase;
+}
+td.info .child_boards a {
+	background: #0073AB;
+	color: white;
+}
+td.info .child_boards a:hover {
+	background: #32373c;
+	color: white;
+}
+/* Highlighted text - such as search results. */
+.highlight, .highlight td, table.table_grid .highlight td
+{
+	color: #7ed5ff !important;
+}
+
+/* A more discreet highlight color, for selected membergroups etc. */
+.highlight2, .highlight2 td, table.table_grid .highlight2 td
+{
+	background: #173041;
+}
+/* Colors for background of posts requiring approval */
+.approvebg, .approvebg2, .approvebg, table .approvebg td, table.table_grid .approvebg td, .approvebg2, table .approvebg2 td, table.table_grid .approvebg2 td
+{
+	background-color: #1c1813;
+}
+
+/* Color for background of *topics* requiring approval */
+.approvetbg, table .approvetbg td, table.table_grid .approvetbg td, .approvetbg2, table .approvetbg2 td, table.table_grid .approvetbg2 td
+{
+	background-color: #3f3d29;
+}
+
+/* Sticky topics get a different background */
+.stickybg, table .stickybg td, table.table_grid .stickybg td, .stickybg2, table .stickybg2 td, table.table_grid .stickybg2 td
+{
+	background-color: #172026;
+}
+
+/* Locked posts get a different shade, too! */
+.lockedbg, table .lockedbg td, table.table_grid .lockedbg td, .lockedbg2, table .lockedbg2 td, table.table_grid .lockedbg2 td
+{
+	background-color: #121416;
+	font-style: italic;
+}
+
+/* Few Other Elements */
+.news_marquee {
+	background: #1B1E20;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+}
+.news_marquee>i {
+	border-right: 1px solid #15161a;
+}
+.inner {
+	border-top: 2px solid #32373c;
+}
+.description, .description_board, .plainbox {
+	background: #1b1e20;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+}
+.boardindex_block .quan,
+.boardindex_block #userstoday {
+	background: #1B1E20;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+}
+.ident {
+	background: #0073AB;
+	color: #fff;
+} 
+.threadthis {
+	background: #0E3B50;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+}
+hr, .hrcolor
+{
+	color: #32373c;
+	background-color: #32373c;
+}
+.quan hr, .windowbg hr, .window2bg hr {
+	background: #32373c;
+} 
+.poster div.avatar>a {
+	background: #0d0e10;
+}
+.statsbar div.bar {
+	background: #0073AB;
+}
+.signature, .custom_fields_above_signature {
+	border-top: 2px #32373c solid;
+}
+
+.signature {
+	color: #818080;
+} 
+.information {
+	background: #FF86A2;
+	color: black;
+	border: none;
+}
+.navPages.active {
+	background: #0073AB;
+	color: white;
+}
+.navPages {
+	background: #1B1E20;
+}
+
+td .navPages {
+	background: #121416;
+}
+.navPages:hover {
+	background: #0073AB;
+	color: white;
+}
+div#index_common_stats .layr .blck i {
+	background: #1B1E20;
+}
+
+div#index_common_stats .layr:hover .blck i {
+	background: #0073ab;
+	color: #fff;
+}
+div#profile_error, .errorbox
+{
+	border-color: #FF202B;
+	color: #3d3d3d;
+	background: #FF868C;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+}
+div#profile_success
+{
+	color: black;
+	background: #20FFAB;
+	border-color: #00EC93;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+}
+.list_posts {
+	border-top: 2px solid #32373c;
+}
+
+div.forumtitle .title_onclick {
+	color: #d7d6d6;
+}
+/* Auto Suggest */
+.auto_suggest_div {background: #1B1E20;}
+.auto_suggest_item,.auto_suggest_item_hover {background-color: #ffffff;color: #000000;}
+.auto_suggest_item_hover {background-color: #0073AB;color: #ffffff;}
+
+body fieldset {
+	border: 2px solid #32373c;
+}
+div.forumtitle .title_onclick:hover .side_icon {
+	background: #0073ab;
+}
+div.forumtitle .title_onclick:hover .side_icon i {
+	color: #fff;
+}
+div.forumtitle .title_onclick .side_icon i {
+	color: #d7d6d6;
+}
+div.forumtitle .side_icon {
+	background: #1B1E20;
+}
+div.forumtitle {
+	text-shadow: none;
+}
+.sunmoon {
+	background: #4c4cbe;
+}
+.checkmark {
+	background-color: #194f6a;
+}
+.container:hover input ~ .checkmark {
+	background-color: #03618f;
+}
+.container input:checked ~ .checkmark {
+	background-color: #0073ab;
+}
+span.moderators {
+	border-left: 2px solid #acacac;
+}
+.button_submit, .button_reset {
+	background: #15161a;
+	color: #dddddd;
+}
+.button_submit:hover, .button_reset:hover {
+	background: #0073ab;
+}
+input, button, select, textarea
+{
+	color: #dddddd;
+	background: #131418;
+}
+input:hover, textarea:hover, button:hover, select:hover
+{
+	background: #101014;
+}
+input:focus, textarea:focus, button:focus, select:focus
+{
+	background: #191c1e;
+}
+div#manage_boards li {
+	border-bottom: 2px solid #32373c;
+}
+div#manage_boards li#recycle_board {
+	background: #1b2e2e;
+}
+.holiday {
+	color: #12B1FF;
+}
+div#smfAnnouncements dt {
+	border-bottom: 2px solid #32373c;
+}
+.counter {
+	color: #919191;
+}
+.left_admmenu li strong a {
+	background: #0073ab;
+	color: #fff;
+}
+.fullscreen .fsInner {
+	background: #0d0e10;
+}
+.inGroup input:focus ~ label, .inGroup input:valid ~ label {
+	color: #0073ab;
+}
+.inGroup .bar:before, .inGroup .bar:after {
+	background: #0073ab;
+}
+code.bbc_code {
+	background: #15161a;
+}
+blockquote.bbc_standard_quote, blockquote.bbc_alternate_quote {
+	border-color: #c2c2c2;
+	color: #c2c2c2;
+}
+.bbc_table td {
+	background: #15161a;
+}
+.dynamic_menu header nav {
+	background: #0d0e10;
+}
+.dynamic_menu header nav .dropmenu li a.active, header nav .dropmenu>li:hover a.firstlevel, header nav .dropmenu>li a.firstlevel:active {
+	border-left-color: #0073ab !important;
+	background: unset;
+}
+.incarn {
+	background: #1e2024;
+}
+@media (max-width: 768px) {
+	header nav {
+		background: #0d0e10;
+	}
+	header nav .dropmenu li a.active, header nav .dropmenu>li:hover a.firstlevel, header nav .dropmenu>li a.firstlevel:active {
+		border-left-color: #0073ab !important;
+		background: unset;
+	}
+}
+header .menuOpener.buttonLike {
+	color: #bebebe;
+}
+.left_admmenu {
+	background:#0d0e10
+}
+.activity_stats li div.bar div
+{
+	background: #4c4cbe;
+} 
+@media only screen and (max-width: 425px) {
+	.phoneList li a, ul.phoneList li a, ul.quickbuttons.phoneList li a {
+		background: #15161a;
+	}
+}
+#detailedinfo div.content dl, #tracking div.content dl {
+	border-color: #32373c;
+}
+.poster li .buttonLike {
+	background: #15161a;
+}
+.news_marquee i.fa-circle {
+	color: #4c4cbe;
+}
+table.table_list tbody.content td.icon img {
+	-webkit-filter: invert(1);
+	filter: invert(1);
+	-moz-filter: invert(1);
+	-ms-filter: invert(1);
+	-o-filter: invert(1);
+}
+h3.catbg.colpst {
+	background: #1b1e20;
+}
+footer a.buttonLike.toTopSR {
+	background: #0d3a52;
+	color: #838383;
+}
+div#smileyBox_message, div#bbcBox_message, textarea.editor {
+	background: #15161a;
+}
+
+div#bbcBox_message {
+	background: #d7d6d6;
+} 
+@media (max-width: 768px) {
+	#admin_menu .dropmenu li li ul {
+		background: #0d0e10;
+	}
+	#admin_menu .dropmenu li li ul:after{
+		border-bottom: 8px solid #0d0e10;
+	}
+	#admin_menu li a.firstlevel:hover{
+		background: #4c4cbe !important;
+	}
+	#admin_menu .dropmenu>li>ul {
+		border-top: 4px solid #4c4cbe;
+		border-bottom: 4px solid #4c4cbe;
+	}
+}
+
+/* vbgamer45's Like Posts Support.
+---------------------------------- */
+.like_posts_member_info_box {
+	background: #0d0e10 !important;
+}
+.like_posts_member_info {
+	border-top: none !important;
+	border-bottom: 2px solid transparent !important;
+}
+.subject_details {
+	background-color: #0d0e10 !important;
+	color: #A0A0A0 !important;
+	display: none;
+	position: absolute;
+	padding: 10px;
+	border: 0px !important;
+	border-radius: 1px!important;
+	width: auto!important;
+}
+.like_post_message_data,
+.like_post_topic_data,
+.like_post_board_data,
+.like_post_most_liked_user_data,
+.like_post_most_likes_given_user_data,
+.like_post_stats_error {
+	background: #1b1e20 !important;
+	color: #ddd !important;
+}
+.like_link {
+	background: #0073ab !important;
+}
